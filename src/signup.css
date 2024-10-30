@@ -1,0 +1,96 @@
+/* Container for the signup form */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+   width: 800px;
+  margin: 100px auto;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title style */
+.signup-container h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+/* Input group styling */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+/* Input field styles */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Signup button styling */
+.signup-btn {
+  background-color: #3399ff;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+}
+
+.signup-btn:hover {
+  background-color: #007bff;
+}
+
+/* Message display styles */
+.message, .success-message {
+  margin-top: 15px;
+  font-size: 14px;
+  color: red;
+}
+
+.success-message {
+  color: green;
+}
+
+/* Redirect link styling */
+.redirect-text {
+  margin-top: 20px;
+  color: #555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .signup-container {
+      width: 90%;
+      padding: 10px;
+  }
+}

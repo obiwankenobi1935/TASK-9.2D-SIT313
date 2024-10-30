@@ -1,0 +1,63 @@
+.pricing-container {
+text-align: center;
+padding: 20px;
+}
+
+.pricing-title {
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+.pricing-cards {
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+.card {
+border: 1px solid #ddd;
+padding: 20px;
+border-radius: 8px;
+width: 250px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card.premium {
+background-color: #f8f9fa;
+border-color: #007bff;
+}
+
+/* Card Hover Effect */
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 16px rgba(41, 161, 253, 0.2);
+}
+
+.price {
+font-size: 1.5rem;
+color: #007bff;
+}
+
+.features {
+list-style-type: none;
+padding: 0;
+margin: 10px 0;
+}
+
+.select-plan-btn {
+padding: 10px 20px;
+font-size: 1rem;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button Hover Effect */
+.select-plan-btn:hover {
+background-color: #0056b3;
+transform: scale(1.05);
+}

@@ -1,0 +1,98 @@
+/* Container for the login form */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 400px; /* Adjusted width for a compact layout */
+  margin: 100px auto;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title style */
+.login-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Input group styling */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+/* Input field styles */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Login button styling */
+button[type="submit"] {
+  background-color: #3399ff;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #007bff;
+}
+
+/* Message display styles */
+p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: red; /* Default color for error messages */
+}
+
+.success-message {
+  color: green; /* Success message color */
+}
+
+/* Redirect link styling */
+.redirect-text {
+  margin-top: 20px;
+  color: #555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    padding: 10px;
+  }
+}

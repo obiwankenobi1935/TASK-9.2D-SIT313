@@ -1,0 +1,44 @@
+/* home.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f0f4f8, #cfd9df);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .home-title {
+    font-size: 3rem;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .home-subtitle {
+    font-size: 1.5rem;
+    color: #666;
+    margin: 20px 0;
+    max-width: 600px;
+  }
+  
+  .explore-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  }
+  
+  .explore-btn:hover {
+    background-color: #0056b3;
+  }
+  

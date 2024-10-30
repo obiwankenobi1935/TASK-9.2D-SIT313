@@ -1,0 +1,120 @@
+/* Container for the post form */
+.post-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+width: 500px; /* Adjusted width for a compact layout */
+margin: 50px auto;
+border: 2px solid black;
+border-radius: 8px;
+background-color: white;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.post-form h2 {
+font-size: 24px;
+margin-bottom: 20px;
+color: #333;
+}
+
+/* Post type section */
+.post-type {
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-bottom: 20px;
+}
+
+.post-type label {
+font-size: 16px;
+color: #333;
+}
+
+.post-type input[type="radio"] {
+margin-left: 5px;
+}
+
+/* Form group styling */
+.form-group {
+display: flex;
+flex-direction: column;
+width: 80%;
+margin-bottom: 15px;
+}
+
+.form-group label {
+font-size: 14px;
+margin-bottom: 5px;
+color: #333;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+textarea {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 14px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+outline: none;
+border-color: #007bff;
+}
+
+/* File input styling */
+.form-group input[type="file"] {
+font-size: 14px;
+margin-top: 5px;
+}
+
+button[type="button"] {
+background-color: #3399ff;
+color: white;
+padding: 10px;
+border-radius: 4px;
+cursor: pointer;
+font-size: 14px;
+margin-top: 10px;
+border: none;
+}
+
+button[type="button"]:hover {
+background-color: #007bff;
+}
+
+/* Main submit button styling */
+button[type="submit"] {
+background-color: #3399ff;
+color: white;
+padding: 12px;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+margin-top: 20px;
+border: none;
+}
+
+button[type="submit"]:hover {
+background-color: #007bff;
+}
+
+/* Upload button state */
+button:disabled {
+background-color: #ccc;
+cursor: not-allowed;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+.post-form {
+    width: 90%;
+    padding: 15px;
+}
+}

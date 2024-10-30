@@ -1,0 +1,136 @@
+/* Container for the Find Questions page */
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 1000px; /* Adjusted width for a spacious layout */
+    margin: 100px auto;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title style */
+  .question-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Search input styling */
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Add question form styling */
+  .add-question-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .add-question-form input[type="text"],
+  .add-question-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .add-question-form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .add-question-form input:focus,
+  .add-question-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Add question button styling */
+  .add-question-form button[type="submit"] {
+    background-color: #3399ff;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+  }
+  
+  .add-question-form button[type="submit"]:hover {
+    background-color: #007bff;
+  }
+  
+  /* Question list styling */
+  .question-list {
+    width: 100%;
+  }
+  
+  .question-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Question details styling */
+  .question-details {
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .question-details p {
+    margin-bottom: 5px;
+    color: #000000;
+  }
+  
+  /* Delete button styling */
+  .question-card button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+  }
+  
+  .question-card button:hover {
+    background-color: #3399ff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .question-container {
+      width: 90%;
+      padding: 10px;
+    }
+  }
+  

@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './navbar';
+import Login from './login';
+import SignUp from './signup';
+import Profile from './profile';
+import Home from './Home';
+import { auth } from './firebase';
 import './App.css';
+import PricingPlans from './PricingPlans';
+import FindQuestion from './FindQuestions';
+import PostForm from './PostForm';
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      setUser(user);
+    });
+    return unsubscribe;
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar user={user} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/plans" element={<PricingPlans />}/>
+        <Route path="/findquestions" element={<FindQuestion />}/>
+        <Route path="/postform" element={<PostForm />}/>
+      </Routes>
+    </Router>
   );
 }
 
