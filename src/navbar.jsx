@@ -24,10 +24,10 @@ function NavBar({ user }) {
           <Link to="/findquestions">
               <button className="nav-findquestion-button">Find Question</button>
             </Link>
-          <button className="nav-logout-btn" onClick={handleLogout}>Logout</button>
-          <Link to="./postform">
+            <Link to="./postform">
           <button className="nav-post-btn">Post Form</button>
           </Link>
+          <button className="nav-logout-btn" onClick={handleLogout}>Logout</button>
 
           </>
         ) : (
